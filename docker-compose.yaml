@@ -1,0 +1,15 @@
+services:
+  dev:
+    build: .
+    volumes:
+      - "$HOME/data:$HOME/data"
+    tty: true
+    ports:
+      - '8888:8888'
+    deploy:
+      resources:
+        reservations:
+          devices:
+            - driver: nvidia
+              count: 1
+              capabilities: [gpu]
