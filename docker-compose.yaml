@@ -4,6 +4,7 @@ services:
     volumes:
       - "$HOME/data:$HOME/data"
     tty: true
+    stdin_open: true
     ports:
       - '8888:8888'
     deploy:

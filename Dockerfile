@@ -8,3 +8,5 @@ RUN pip install --upgrade pip && pip install \
     matplotlib \
     opencv-python \
     ffmpeg-python
+
+ENTRYPOINT /bin/bash
