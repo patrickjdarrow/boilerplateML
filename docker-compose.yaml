@@ -2,7 +2,7 @@ services:
   dev:
     build: .
     volumes:
-      - "$HOME/data:$HOME/data"
+      - "$HOME/data:/data"
     tty: true
     stdin_open: true
     ports:
